@@ -10,6 +10,11 @@
     <script src="Scripts/jquery-3.6.0.min.js" type="text/javascript"></script>
     <script src="Scripts/bootstrap.bundle.min.js" type="text/javascript"></script>
     <script src="Scripts/IEBehaviourLiabrary/IEBehavior.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            ApplyIEBehaviour();
+        });
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -38,7 +43,7 @@
                             <td>
                                 <input type="checkbox" class="form-check-input" /></td>
                         </tr>
-                         <tr>
+                        <tr>
                             <td>
                                 <input type="text" value="testValue" class="form-control form-control-sm" /></td>
                             <td>
@@ -48,28 +53,37 @@
                             <td>
                                 <input type="checkbox" class="form-check-input" /></td>
                         </tr>
-                         <tr>
+                        <tr>
                             <td>
-                                <input type="text" value="testValue" class="form-control form-control-sm" readonly="readonly"/></td>
+                                <input type="text" value="testValue" class="form-control form-control-sm" readonly="readonly" /></td>
                             <td>
-                                <input type="password" value="testPassword" class="form-control form-control-sm" readonly="readonly"/></td>
+                                <input type="password" value="testPassword" class="form-control form-control-sm" readonly="readonly" /></td>
                             <td>
-                                <input type="radio" class="form-check-input" readonly="readonly"/></td>
+                                <input type="radio" class="form-check-input" readonly="readonly" /></td>
                             <td>
-                                <input type="checkbox" class="form-check-input" readonly="readonly"/></td>
+                                <input type="checkbox" class="form-check-input" readonly="readonly" /></td>
                         </tr>
-                         <tr>
+                        <tr>
                             <td>
-                                <input type="text" value="testValue" class="form-control form-control-sm" disabled="disabled"/></td>
+                                <input type="text" value="testValue" class="form-control form-control-sm" disabled="disabled" /></td>
                             <td>
-                                <input type="password" value="testPassword" class="form-control form-control-sm" disabled="disabled"/></td>
+                                <input type="password" value="testPassword" class="form-control form-control-sm" disabled="disabled" /></td>
                             <td>
-                                <input type="radio" class="form-check-input" disabled="disabled"/></td>
+                                <input type="radio" class="form-check-input" disabled="disabled" /></td>
                             <td>
-                                <input type="checkbox" class="form-check-input" disabled="disabled"/></td>
+                                <input type="checkbox" class="form-check-input" disabled="disabled" /></td>
                         </tr>
                     </tbody>
                 </table>
+                <%-- Using ICons --%>
+                <div class="row my-3 ">
+                    <span class="d-flex justify-content-start align-items-start">
+                        <i class="fa fa-times-circle-o mx-3"></i>
+                        <i class="fa fa-eye mx-3"></i>
+                        <i class="fa fa-eye-slash mx-3"></i>
+                    </span>
+                </div>
+
             </div>
         </div>
     </form>

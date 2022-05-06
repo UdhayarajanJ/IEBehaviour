@@ -16,7 +16,7 @@ function getWrapperDivElement() {
     var WrapperXIcon = $('<div>', {
         css: {
             'position': 'relative',
-            'display': 'inline-flex',
+            'display':'flex',
             'align-items': 'center'
         },
         addClass: 'xico'
@@ -28,13 +28,12 @@ function getIconElement(Type) {
         css: {
             'position': 'absolute',
             'right': '5px',
-            'opacity': '.5',
             'cursor': 'pointer',
             'font-size': '.7rem'
         }
     });
     if (Type != 'password')
-        $XIcon.addClass('fa-solid fa-circle-xmark');
+        $XIcon.addClass('fa fa-times-circle-o');
     else
         $XIcon.addClass('fa fa-eye');
 
@@ -49,9 +48,9 @@ function ClearDataClickXIcon() {
     else {
         var Toggle = $(this).prev().attr('type') == 'password' ? true : false;
         if (Toggle)
-            $(this).removeClass('fa fa-eye').addClass('fa-solid fa-eye-slash').prev().attr('type', 'text');
+            $(this).removeClass('fa fa-eye').addClass('fa fa-eye-slash').prev().attr('type', 'text');
         else
-            $(this).removeClass('fa-solid fa-eye-slash').addClass('fa fa-eye').prev().attr('type', 'password');
+            $(this).removeClass('fa fa-eye-slash').addClass('fa fa-eye').prev().attr('type', 'password');
 
     }
 }
