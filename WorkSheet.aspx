@@ -13,7 +13,10 @@
     <script type="text/javascript">
         $(document).ready(function () {
             alert("Hello Udya");
-            ApplyIEBehaviour(['#textExecept1','#textExecept2']);
+            ApplyIEBehaviour(['#textExecept1', '#textExecept2']);
+            $('#Checkbtn').click(() => {
+                alert('check Alert Button Click......');
+            });
         });
     </script>
 </head>
@@ -84,7 +87,7 @@
                         <i class="fa fa-eye-slash mx-3"></i>
                     </span>
                 </div>
-
+                <button class="btn btn-primary btn-sm" id="Checkbtn" type="button">CheckButton</button>
             </div>
         </div>
     </form>
