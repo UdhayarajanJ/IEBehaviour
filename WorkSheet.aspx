@@ -12,7 +12,7 @@
     <script src="Scripts/IEBehaviourLiabrary/IEBehavior.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            ApplyIEBehaviour();
+            ApplyIEBehaviour(['#textExecept1','#textExecept2']);
         });
     </script>
 </head>
@@ -37,7 +37,7 @@
                             <td>
                                 <input type="text" class="form-control form-control-sm" /></td>
                             <td>
-                                <input type="password" class="form-control form-control-sm" /></td>
+                                <input type="password" id="textExecept2" class="form-control form-control-sm" /></td>
                             <td>
                                 <input type="radio" class="form-check-input" /></td>
                             <td>
@@ -45,7 +45,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="text" value="testValue" class="form-control form-control-sm" /></td>
+                                <input type="text" value="testValue" id="textExecept1" class="form-control form-control-sm" /></td>
                             <td>
                                 <input type="password" value="testPassword" class="form-control form-control-sm" /></td>
                             <td>
@@ -57,7 +57,7 @@
                             <td>
                                 <input type="text" value="testValue" class="form-control form-control-sm" readonly="readonly" /></td>
                             <td>
-                                <input type="password" value="testPassword" class="form-control form-control-sm" readonly="readonly" /></td>
+                                <input type="password" value="testPassword"  class="form-control form-control-sm" readonly="readonly" /></td>
                             <td>
                                 <input type="radio" class="form-check-input" readonly="readonly" /></td>
                             <td>

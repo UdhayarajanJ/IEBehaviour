@@ -1,5 +1,5 @@
 ﻿function ApplyIEBehaviour(x) {
-    $('input[type=text]:not(' + x + '),input[type=password]:not(' + x + ')').on('input focusin', function (e) {
+    $('input[type=text]:not(' + x + ',[readonly]),input[type=password]:not(' + x + ',[readonly])').on('input focusin', function (e) {
         if (!$(this).next().is('i') && browserCompatibility() && $(this).val() != '') {
             $(this).wrap(getWrapperDivElement()).after(getIconElement($(this).attr('type')));
             $(this).focus();
