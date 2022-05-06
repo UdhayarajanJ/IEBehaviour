@@ -12,7 +12,7 @@
     <script src="Scripts/IEBehaviourLiabrary/IEBehavior.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            alert("Hello..");
+            alert("Hello Udya");
             ApplyIEBehaviour(['#textExecept1','#textExecept2']);
         });
     </script>
